@@ -1,0 +1,69 @@
+/*  Universal Selector */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* Clearfix*/
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+html {
+    background-image: linear-gradient(to right, purple, white, blue);
+}
+header {
+    text-align:center;
+    font-size: 150%;
+}
+body {
+    border:3px solid teal; 
+    margin: 0px auto;
+    border-radius: .5em;
+    max-width: 960px;
+    width: 100%;
+    background-color: turquoise;
+    box-shadow: 5px #888888;
+}
+footer {
+    clear: both;
+    text-align: center;
+    font-size: 100%;
+	color: black;
+}
+@media only screen and (max-width: 767px) {
+html {
+    background-image: none;
+}
+header {
+    float: none;
+    text-align: center;
+    font-size: 120%;
+}
+body {
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+}
+#slider {
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
+}
+#wrapper {
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
+}
+.slider-wrapper {
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
+}
+.theme-bar {
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
+}
+}
